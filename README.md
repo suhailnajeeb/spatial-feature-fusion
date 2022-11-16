@@ -48,8 +48,8 @@ Segmentation Task:
 
 Dataset Statistics:
 
-|||CT Scanner||Number of Slices|||
-|--|--|--|--|--|--|--|
+|||CT Scanner||Number of Slices||
+|--|--|--|--|--|--|
 |Dataset|Patients|CMS|Siemens|Tumor|Non-Tumor|
 |Train|260|60|200|4296(13.7%)|26951(86.3%)|
 |Test|40|34|6|848(18.9%)|3610(81.1%)|
