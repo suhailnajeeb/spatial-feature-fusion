@@ -155,3 +155,18 @@ Sample 3
 - We have proposed three novel architecutres which incorporate multi-scale spatial feature fusion and improve lung tumor segmentation performance with minimal computational overhead. 
 - Our proposed architectures achieved performance improvements of 1.61%, 2.25%, and 2.42% respectively in terms of 2D dice coefficient. 
 - Our proposed architectures also achieved performance improvements of 7.58%, 2.32%, and 4.28% in terms of 3D dice coefficient. 
+
+## Source Code
+
+To obtain the baseline 2D models train using the script `code/train_2d.py`. The 3D data generation/pipeline can be found in here - https://github.com/muntakimrafi/TIA2020-Recurrent-3D-DenseUNet , https://github.com/udaykamal20/Team_Spectrum which is the implementation of the Recurrent-3D-DenseUNet. The models used in this publication can be found in `code/model_lib.py` folder. Example usage of the models with multi-scale-spatial-feature-fusion: 
+
+```python
+def get_HybridUNet001(model_fe, input_shape = (256, 256, 8, 1)):
+    '''
+    Usage: 
+    base_model = load_model('preferred type: UNet2Dx3 (functional)') 
+    model_fe = get_model_fe(base_model)
+    model = get_HybridUNet001(model_fe)
+    '''
+    pass
+```
